@@ -5,7 +5,7 @@ class ACLandingConfig {
     const CHECK_DUPLICATES = '';
     const API_KEY = '';
     const LOG_ENABLED = true;        // Log orders to orderlog.php
-    const GEOIP_ENABLED = true;      // Enable GeoIP detection
+    const GEOIP_ENABLED = false;      // Enable GeoIP detection
     const DETECT_MOBILE = true;      // Enable mobile browser detection
     const API_URL_PAYMENT_REDIRECT = 'https://adc-land-api.name/payment/second';
     const API_URL_PAYMENT_KEY = 'second_page_url';
