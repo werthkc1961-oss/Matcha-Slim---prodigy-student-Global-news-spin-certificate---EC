@@ -1,282 +1,50 @@
-{
-    "_readme": [
-        "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-        "This file is @generated automatically"
-    ],
-    "content-hash": "fe8a40c63cc9eec8186a0963c38cb9fc",
-    "packages": [
-        {
-            "name": "composer/ca-bundle",
-            "version": "1.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "8afa52cd417f4ec417b4bfe86b68106538a87660"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/8afa52cd417f4ec417b4bfe86b68106538a87660",
-                "reference": "8afa52cd417f4ec417b4bfe86b68106538a87660",
-                "shasum": ""
-            },
-            "require": {
-                "ext-openssl": "*",
-                "ext-pcre": "*",
-                "php": "^5.3.2 || ^7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5",
-                "psr/log": "^1.0",
-                "symfony/process": "^2.5 || ^3.0 || ^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Composer\\CaBundle\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be"
-                }
-            ],
-            "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.",
-            "keywords": [
-                "cabundle",
-                "cacert",
-                "certificate",
-                "ssl",
-                "tls"
-            ],
-            "time": "2018-10-18T06:09:13+00:00"
-        },
-        {
-            "name": "geoip2/geoip2",
-            "version": "v2.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/maxmind/GeoIP2-php.git",
-                "reference": "a807fbf65212eef5d8d2db1a1b31082b53633d77"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/GeoIP2-php/zipball/a807fbf65212eef5d8d2db1a1b31082b53633d77",
-                "reference": "a807fbf65212eef5d8d2db1a1b31082b53633d77",
-                "shasum": ""
-            },
-            "require": {
-                "maxmind-db/reader": "~1.0",
-                "maxmind/web-service-common": "~0.5",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "2.*",
-                "phpunit/phpunit": "4.*",
-                "squizlabs/php_codesniffer": "3.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "GeoIp2\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Gregory J. Oschwald",
-                    "email": "goschwald@maxmind.com",
-                    "homepage": "http://www.maxmind.com/"
-                }
-            ],
-            "description": "MaxMind GeoIP2 PHP API",
-            "homepage": "https://github.com/maxmind/GeoIP2-php",
-            "keywords": [
-                "IP",
-                "geoip",
-                "geoip2",
-                "geolocation",
-                "maxmind"
-            ],
-            "time": "2018-04-10T15:32:59+00:00"
-        },
-        {
-            "name": "maxmind-db/reader",
-            "version": "v1.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/maxmind/MaxMind-DB-Reader-php.git",
-                "reference": "eb83d0ee1c1f9b8a340206302136bc81ee02ae74"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/MaxMind-DB-Reader-php/zipball/eb83d0ee1c1f9b8a340206302136bc81ee02ae74",
-                "reference": "eb83d0ee1c1f9b8a340206302136bc81ee02ae74",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "2.*",
-                "phpunit/phpunit": "4.* || 5.*",
-                "satooshi/php-coveralls": "1.0.*",
-                "squizlabs/php_codesniffer": "3.*"
-            },
-            "suggest": {
-                "ext-bcmath": "bcmath or gmp is required for decoding larger integers with the pure PHP decoder",
-                "ext-gmp": "bcmath or gmp is required for decoding larger integers with the pure PHP decoder",
-                "ext-maxminddb": "A C-based database decoder that provides significantly faster lookups"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MaxMind\\Db\\": "src/MaxMind/Db"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Gregory J. Oschwald",
-                    "email": "goschwald@maxmind.com",
-                    "homepage": "http://www.maxmind.com/"
-                }
-            ],
-            "description": "MaxMind DB Reader API",
-            "homepage": "https://github.com/maxmind/MaxMind-DB-Reader-php",
-            "keywords": [
-                "database",
-                "geoip",
-                "geoip2",
-                "geolocation",
-                "maxmind"
-            ],
-            "time": "2019-01-04T19:55:56+00:00"
-        },
-        {
-            "name": "maxmind/web-service-common",
-            "version": "v0.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/maxmind/web-service-common-php.git",
-                "reference": "61a9836fa3bb1743ab89752bae5005d71e78c73b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/web-service-common-php/zipball/61a9836fa3bb1743ab89752bae5005d71e78c73b",
-                "reference": "61a9836fa3bb1743ab89752bae5005d71e78c73b",
-                "shasum": ""
-            },
-            "require": {
-                "composer/ca-bundle": "^1.0.3",
-                "ext-curl": "*",
-                "ext-json": "*",
-                "php": ">=5.4"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "2.*",
-                "phpunit/phpunit": "4.*",
-                "squizlabs/php_codesniffer": "3.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MaxMind\\Exception\\": "src/Exception",
-                    "MaxMind\\WebService\\": "src/WebService"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Gregory Oschwald",
-                    "email": "goschwald@maxmind.com"
-                }
-            ],
-            "description": "Internal MaxMind Web Service API",
-            "homepage": "https://github.com/maxmind/web-service-common-php",
-            "time": "2018-02-12T22:31:54+00:00"
-        },
-        {
-            "name": "mobiledetect/mobiledetectlib",
-            "version": "2.8.33",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/serbanghita/Mobile-Detect.git",
-                "reference": "cd385290f9a0d609d2eddd165a1e44ec1bf12102"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/cd385290f9a0d609d2eddd165a1e44ec1bf12102",
-                "reference": "cd385290f9a0d609d2eddd165a1e44ec1bf12102",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.0.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8.35||~5.7"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "Mobile_Detect.php"
-                ],
-                "psr-0": {
-                    "Detection": "namespaced/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Serban Ghita",
-                    "email": "serbanghita@gmail.com",
-                    "homepage": "http://mobiledetect.net",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Mobile_Detect is a lightweight PHP class for detecting mobile devices. It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.",
-            "homepage": "https://github.com/serbanghita/Mobile-Detect",
-            "keywords": [
-                "detect mobile devices",
-                "mobile",
-                "mobile detect",
-                "mobile detector",
-                "php mobile detect"
-            ],
-            "time": "2018-09-01T15:05:15+00:00"
-        }
-    ],
-    "packages-dev": [],
-    "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
-    "prefer-lowest": false,
-    "platform": {
-        "ext-json": "*"
-    },
-    "platform-dev": []
-}
+
+<!DOCTYPE html><html dir="ltr"><head><script>
+   var acrum_extra = {"id": 93986, "type": "landing", "ccodes": [], "offer_id": 34348, "esub": "-7EBRQCgQAAAd90wEDLIYAADcibwFCCAADDxfR02oREQoRCRoRDUIRDVoDdXMAAH9hZGNvbWJv_3k5TGJiN1A1AANDQQ", "location": null, "ip_city": "", "iew": "true"};
+  </script><script>
+   var lang_locale = "es";
+  </script><script type="text/javascript">
+   var ccode = "EC"; var ip_ccode = "EC"; var package_prices = {}; var shipment_price = 0; var name_hint = "Gabriela Valencia"; var phone_hint = "+593-X-XXX-XXXX"; var iew = true; var offer_countries = {};
+  </script><script src="js/jquery-1.12.4.min.js" type="text/javascript">
+  </script><style>
+   .ac_footer {
+        position: relative;
+        top: 10px;
+        height: 0;
+        text-align: center;
+        margin-bottom: 70px;
+        color: #A12000;
+    }
+
+    .ac_footer a {
+        color: #A12000;
+    }
+
+    .ac_footer p {
+        text-align: center;
+    }
+
+    img[height="1"], img[width="1"] {
+        display: none !important;
+    }
+  </style><script src="js/9_12_14.min.js" type="text/javascript">
+  </script><meta content="text/html; charset=utf-8" http-equiv="Content-Type"><meta content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" name="viewport"><title>Matcha Slim - Bienestar y Nutrición Natural en Ecuador</title><link href="css/main.css" rel="stylesheet"></head><body><div class="wrapper"><nav class="navbar navbar-expand-lg navbar-dark bg-light"><div style="
+    display: flex;
+    align-items: center;
+    justify-content: center;
+"><picture><img alt="img" class="logo" src="images/logo.png"></picture><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav"><li class="nav-item active"><a class="nav-link" href="https://bemobtrcks.com" onclick="window.top.location.href='https://bemobtrcks.com'; return false;"> Inicio <span class="sr-only"> (current) </span></a></li><li class="nav-item"><a class="nav-link" href="https://izrud.bemobtrcks.com/click onclick="window.top.location.href='https://bemobtrcks.com'; return false;"> Institucional </a></li><li class="nav-item"><a class="nav-link" href="https://bemobtrcks.com" onclick="window.top.location.href='https://bemobtrcks.com'; return false;"> Noticias </a></li><li class="nav-item"><a aria-disabled="true" class="nav-link disabled" href="https://bemobtrcks.com" onclick="window.top.location.href='https://bemobtrcks.com'; return false;" tabindex="-1"> Servicios </a></li></ul></div></div></nav><div style="margin-top: 15px; margin-left: 15px; font-weight: bold;text-align: center;"><a href="https://bemobtrcks.com" onclick="window.top.location.href='https://bemobtrcks.com'; return false;" style="color: black;"> Inicio > Salud y Bienestar > Nutrición </a></div><div class="main"><div class="container"><div class="content zoom-gallery"><div class="lead"><h1 class="lead__title accent"> Una destacada estudiante de Quito recibió un reconocimiento en nutrición natural por desarrollar una fórmula para apoyar el control de peso de forma natural y saludable. </h1><figure class="lead__pic"><picture><img alt="img" class="ie" src="images/01.jpg"></picture><figcaption class="lead__caption"> Silvina Fandiño </figcaption></figure><div class="lead__text"><script>
+         var date = new Date();
+                  var currentMonth = date.getUTCMonth() + 1;
+
+                  if (currentMonth == 2) document.write("En invierno");
+                  if (currentMonth == 3 || currentMonth == 4) document.write("En primavera");
+                  if (currentMonth == 5) document.write("En primavera");
+                  if (currentMonth == 6 || currentMonth == 7) document.write("En verano");
+                  if (currentMonth == 8) document.write("En verano");
+                  if (currentMonth == 9 || currentMonth == 10) document.write("En otoño");
+                  if (currentMonth == 11) document.write("En otoño");
+                  if (currentMonth == 12 || currentMonth == 1) document.write("En invierno");
+        </script> de <script type="text/javascript">
+         d = new Date();
+                  p = new Date(d.getTime() - 60 * 86400000);
+                  document.write(p.getFullYear());
